@@ -1,5 +1,7 @@
 import "./style.css";
+import "./dropdown";
 import dropDownMenu from "../public/dropdown.svg";
+import { showMenu } from "./dropdown";
 
 document.querySelector("#app").innerHTML = `
   <div class="dropdown">
@@ -14,3 +16,5 @@ document.querySelector("#app").innerHTML = `
     <img class="dropdown__logo" src="${dropDownMenu}">
   </div>
 `;
+
+showMenu(document.querySelector(".dropdown__logo"));

@@ -27,6 +27,16 @@ body {
 }
 
 .dropdown__logo {
-  height: 25px;
+  height: 30px;
   display: none;
+}
+
+@media (max-width: 550px) {
+  .dropdown__menus {
+    display: none;
+  }
+
+  .dropdown__logo {
+    display: block;
+  }
 }
