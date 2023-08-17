@@ -16,8 +16,7 @@ body {
   font-weight: bold;
   font-size: 18px;
 }
-.dropdown__menus {
-}
+
 .menus__itens {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
@@ -33,7 +32,32 @@ body {
 
 @media (max-width: 550px) {
   .dropdown__menus {
+    position: absolute;
+    padding: 0px;
+    top: 75px;
+    left: 0px;
+    right: 0px;
+    margin: 0px;
     display: none;
+  }
+
+  .menus__itens {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 12px;
+    padding: 12px;
+    background-color: #666;
+  }
+
+  .show {
+    display: block;
   }
 
   .dropdown__logo {
