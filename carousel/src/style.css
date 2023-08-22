@@ -1,0 +1,77 @@
+body,
+html {
+  margin: 0px;
+  height: 100%;
+}
+
+.carousel {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.carousel__imgs {
+  background-color: #888;
+  height: 75%;
+  max-height: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel__current-img {
+  height: 100%;
+  width: 75%;
+  max-width: 800px;
+  pointer-events: none;
+}
+
+@media (max-width: 800px) {
+  .carousel__current-img {
+    border: 1px solid black;
+    width: 100%;
+  }
+}
+
+.carousel__counters {
+  background-color: #666;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px;
+}
+
+.carousel__counter {
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  border: 2px solid black;
+  background-color: black;
+}
+
+.carousel__counter-active {
+  background-color: antiquewhite;
+}
+
+.carousel__button {
+  height: fit-content;
+  border-radius: 40px;
+  border: none;
+}
+
+.button__img {
+  width: 40px;
+  pointer-events: none;
+}
+
+.carousel__previous {
+  position: absolute;
+  left: 8px;
+  top: 300px;
+}
+
+.carousel__next {
+  position: absolute;
+  right: 8px;
+  top: 300px;
+}
