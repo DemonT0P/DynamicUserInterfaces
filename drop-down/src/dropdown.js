@@ -2,7 +2,6 @@ import dropDownMenu from "../public/dropdown.svg";
 
 export function showMenu(element, menu) {
   element.addEventListener("click", () => {
-    console.log("Deu bom");
     menu.classList.toggle("show");
   });
 }

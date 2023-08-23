@@ -1,15 +1,6 @@
 import "./style.css";
-import "./carousel.js";
-import "./slider.js";
+import carousel from "./carousel.js";
+import start from "./slider";
 
-/*
-document.querySelector("#app").innerHTML = `
-
-`;
-
-let counter = 0;
-let counters = document.querySelectorAll(".carousel__counter");
-setInterval(() => {
-  counters[counter].classList.toggle(".carousel__counter-active");
-}, 1000);
-*/
+document.querySelector("#app").innerHTML = carousel();
+start();
