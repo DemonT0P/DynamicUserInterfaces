@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  src: local("Poppins-Bold"), url(@/assets/Poppins-Bold.ttf) format("truetype");
+}
+
 body {
   margin: 0px;
 }
@@ -5,24 +11,53 @@ body {
 .dropdown {
   height: 75px;
   padding: 0px 16px;
-  background-color: aqua;
+  background-color: #242526;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .dropdown__title {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 24px;
+  color: #fff;
 }
 
 .menus__itens {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  color: #fff;
+  height: 100%;
   font-weight: bold;
   list-style: none;
   display: flex;
-  gap: 12px;
+}
+
+.dropdown__itens {
+  list-style: none;
+  position: absolute;
+  top: 30x;
+  background-color: #242526;
+  line-height: 30px;
+  padding: 20px 20px 0px 0px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.itens__dropdown:hover .dropdown__itens {
+  top: 55px;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.15s ease;
+}
+
+.menus__itens li {
+  padding: 4px 16px;
+  border-radius: 20px;
+}
+
+.menus__itens li:hover {
+  background-color: #4a4c4e;
 }
 
 .dropdown__logo {
@@ -44,7 +79,7 @@ body {
   .menus__itens {
     margin: 0px;
     padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
     font-weight: bold;
     list-style: none;
     display: flex;

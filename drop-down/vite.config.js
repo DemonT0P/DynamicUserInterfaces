@@ -5,4 +5,9 @@ export default {
   build: {
     outDir: path.join(__dirname, "dist"),
   },
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "src"),
+    },
+  },
 };

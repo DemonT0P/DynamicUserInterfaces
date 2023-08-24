@@ -14,6 +14,15 @@ export function dropdown() {
       <ul class="menus__itens">
         <li>Home</li>
         <li>Shop</li>
+        <li class="itens__dropdown">
+        <span>DropDown Menu</span>
+        <ul class="dropdown__itens">
+          <li>DropDown Item 1</li>
+          <li>DropDown Item 2</li>
+          <li>DropDown Item 3</li>
+          <li>DropDown Item 4</li>
+        </ul>
+        </li>
         <li>Contact Us</li>
       </li>
     </div>
